@@ -26,11 +26,3 @@ export const books: Book[] = [
     { id: 7, name: 'The Way of Shadows', authorId: 3 },
     { id: 8, name: 'Beyond the Shadows', authorId: 3 }
 ]
-
-export const notFoundMessage: Message = {
-    message: "Book ID Not Found"
-}
-
-export const failedMessage: Message = {
-    message: "Action Failed"
-}
