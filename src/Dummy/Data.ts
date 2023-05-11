@@ -6,6 +6,11 @@ interface Book {
     id: number, name: string, authorId: number
 }
 
+interface Message {
+    message: string,
+    data?: Book
+}
+
 export const authors: Author[] = [
     { id: 1, name: 'J. K. Rowling' },
     { id: 2, name: 'J. R. R. Tolkien' },
@@ -21,3 +26,11 @@ export const books: Book[] = [
     { id: 7, name: 'The Way of Shadows', authorId: 3 },
     { id: 8, name: 'Beyond the Shadows', authorId: 3 }
 ]
+
+export const notFoundMessage: Message = {
+    message: "Book ID Not Found"
+}
+
+export const failedMessage: Message = {
+    message: "Action Failed"
+}
